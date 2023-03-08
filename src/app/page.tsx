@@ -10,9 +10,11 @@ export default function Home() {
     <main className={styles.main}>
       <div className="flex space-x-10">
         <Suspense fallback={<p className="text-sky-800">Loading todos...</p>}>
+          {/* @ts-ignore */}
           <TodosList />
         </Suspense>
         <Suspense fallback={<p className="text-fuchsia-800">Loading products...</p>}>
+          {/* @ts-ignore */}
           <TodosList />
         </Suspense>
       </div>
